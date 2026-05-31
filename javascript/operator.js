@@ -25,4 +25,8 @@ let num = 4;
 let n = num++;
 let m = num--;
 console.log(n);
-console.log(m)
+console.log(m);
+
+// != is not equal to
+// || is or
+// && is and 
