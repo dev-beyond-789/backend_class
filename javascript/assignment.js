@@ -6,3 +6,8 @@ for (let i = 1; i <= 10; i++) {
 }
 
 // using a arrow function print prime number upto 79
+
+// const isprime = () =>{
+//   for(let i = 1; i <= 79; i++)
+// }
+// console.log()
