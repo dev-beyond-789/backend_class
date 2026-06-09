@@ -14,3 +14,21 @@ Content-Type: application/json
   "email": "samir@gmail.com",
   "password" : "humdnoy98"
 }
+
+###
+GET http://localhost:5000/api/user/getUser
+
+
+###
+GET http://localhost:5000/api/user/get/6a21ae2807b9b239d661cb77
+
+###
+PATCH http://localhost:5000/api/user/update/6a21ae2807b9b239d661cb77
+Content-Type: application/json
+
+{
+  "name" : "nuh"
+}
+
+###
+DELETE http://localhost:5000/api/user/delete/6a21ae648a21dbe8f0e66454
