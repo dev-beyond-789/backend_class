@@ -1,8 +1,8 @@
-const { default: mongoose, isObjectIdOrHexString } = require("mongoose");
+const { default: mongoose } = require("mongoose");
 
 const productSchema = new mongoose.Schema(
   {
-    Buyername: {
+    buyername: {
       type: String,
       required: true,
       trim: true,
@@ -10,9 +10,8 @@ const productSchema = new mongoose.Schema(
     productname: {
       type: String,
       required: true,
-      unique: true,
     },
-    ptoductquantity: {
+    productquantity: {
       type: Number,
       required: true,
     },
