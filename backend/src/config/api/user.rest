@@ -2,16 +2,17 @@ POST http://localhost:5000/api/user/register
 Content-Type: application/json
 
 {
-  "name" : "Samir",
-  "email": "samir@gmail.com",
+  "name" : "DUN",
+  "email": "nud@gmail.com",
   "password": "humdnoy98"
 }
+
 ###
 POST http://localhost:5000/api/user/login
 Content-Type: application/json
 
 {
-  "email": "samir@gmail.com",
+  "email": "nud@gmail.com",
   "password" : "humdnoy98"
 }
 
@@ -20,8 +21,8 @@ GET http://localhost:5000/api/user/getUser
 
 
 ###
-GET http://localhost:5000/api/user/get/6a21ae2807b9b239d661cb77
-
+GET http://localhost:5000/api/user/get/6a21ae8a3cfe1531910367e8
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMjFhZThhM2NmZTE1MzE5MTAzNjdlOCIsImlhdCI6MTc4MTM2OTg4MiwiZXhwIjoxNzgxNDU2MjgyfQ.UpkN9_zgUi7Acpgpev02gc-dTgVvoCz1lqugjyfiwBE
 ###
 PATCH http://localhost:5000/api/user/update/6a21ae2807b9b239d661cb77
 Content-Type: application/json
@@ -31,4 +32,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:5000/api/user/delete/6a21ae648a21dbe8f0e66454
+DELETE http://localhost:5000/api/user/delete/6a2d8fc2727eca77744be6e6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmQ4ZmMyNzI3ZWNhNzc3NDRiZTZlNiIsImlhdCI6MTc4MTM3MTc2MiwiZXhwIjoxNzgxNDU4MTYyfQ.ann-N0X0MJ-4OP0oYUY5MaEAPesuU3bKwUQ8L_VogRI
+
+###
