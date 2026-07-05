@@ -58,3 +58,27 @@ let b = 2;
 console.log(a % b);
 
 
+// print the multiple table of 9
+
+let num1 = 9;
+for (let i = 1; i <= 10; i++) {
+  console.log(`${num1} * ${i} = `, num1 * i);
+}
+
+const promise = async()  => {
+  try {
+const user = await user.create();
+console.log("okay")
+  } catch (error) {
+console.log("not okay")
+  }
+}
+
+
+// addition
+let a = 5;
+let b = 4;
+function add() {
+  return a + b;
+}
+
