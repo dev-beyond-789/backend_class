@@ -82,11 +82,11 @@ for (let i = 1; i <= 79; i++) {
   }
 };
 
-let name = "Beyond";
+let name = "Arav";
 
-let math = 85;
-let science = 72;
-let english = 90;
+let math = 91;
+let science = 89;
+let english = 73;
 
 let average = (math + science + english) / 3;
 
