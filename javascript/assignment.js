@@ -27,3 +27,15 @@ for (let num = 1; num <= 100; num++) {
         console.log(num);
     }
 }
+
+// Simple Number Checker
+
+let number = Number(prompt("Enter a number:"));
+
+if (number > 0) {
+  console.log("The number is positive.");
+} else if (number < 0) {
+  console.log("The number is negative.");
+} else {
+  console.log("The number is zero.");
+}
