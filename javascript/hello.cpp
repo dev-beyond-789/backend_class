@@ -1,38 +1,26 @@
-#include <iostream>
-#include <cmath>
-using namespace std;
-
-int main() {
-    double a, b, c;
-
-    cout << "Enter a: ";
-    cin >> a;
-
-    cout << "Enter b: ";
-    cin >> b;
-
-    cout << "Enter c: ";
-    cin >> c;
-
-    double discriminant = b * b - 4 * a * c;
-
-    if (discriminant > 0) {
-        double x1 = (-b + sqrt(discriminant)) / (2 * a);
-        double x2 = (-b - sqrt(discriminant)) / (2 * a);
-
-        cout << "Two real solutions:" << endl;
-        cout << "x1 = " << x1 << endl;
-        cout << "x2 = " << x2 << endl;
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float a,b,c,d,x,x1,x2;
+    printf("Enter a,b and c");
+    scanf("%f%f%f",&a,&b,&c);
+    d=b*b-4*a*c;
+    if (d>0)
+    {
+        d = sqrt(d);
+        x1 = (-b-d)/(2*a);
+        x2 = (-b+d)/(2*a);
+        printf("x1=%f \t x2=%f",x1,x2);
     }
-    else if (discriminant == 0) {
-        double x = -b / (2 * a);
-
-        cout << "One real solution:" << endl;
-        cout << "x = " << x << endl;
+    else if (d=0)
+    {
+        x = -b/(2*a);
+        printf("%f",x);
     }
-    else {
-        cout << "No real solutions." << endl;
+    else
+    {
+        printf("The roots are imaginary");
     }
-
     return 0;
 }
