@@ -25,25 +25,58 @@
 //     return 0;
 // }
 
+// swap numbers 
+
+// #include <stdio.h>
+
+// int main() {
+//     int a, b;
+
+//     printf("Enter first number: ");
+//     scanf("%d", &a);
+
+//     printf("Enter second number: ");
+//     scanf("%d", &b);
+
+//     // Swap without using another variable
+//     a = a + b;
+//     b = a - b;
+//     a = a - b;
+
+//     printf("After swapping:\n");
+//     printf("First number = %d\n", a);
+//     printf("Second number = %d\n", b);
+
+//     return 0;
+// }
+
+
 #include <stdio.h>
 
 int main() {
-    int a, b;
+    int n, i, prime = 1;
 
-    printf("Enter first number: ");
-    scanf("%d", &a);
+    printf("Enter a number: ");
+    scanf("%d", &n);
 
-    printf("Enter second number: ");
-    scanf("%d", &b);
+    if (n <= 1) {
+        printf("Neither prime nor composite");
+    }
+    else {
+        for (i = 2; i < n; i++) {
+            if (n % i == 0) {
+                prime = 0;
+                break;
+            }
+        }
 
-    // Swap without using another variable
-    a = a + b;
-    b = a - b;
-    a = a - b;
-
-    printf("After swapping:\n");
-    printf("First number = %d\n", a);
-    printf("Second number = %d\n", b);
+        if (prime == 1) {
+            printf("Prime number");
+        }
+        else {
+            printf("Composite number");
+        }
+    }
 
     return 0;
 }
